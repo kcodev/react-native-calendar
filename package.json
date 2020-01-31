@@ -1,0 +1,50 @@
+{
+  "name": "@kcodev/react-native-calendar",
+  "version": "1.0.0",
+  "description": "React Native basic calendar module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kcodev/react-native-calendar.git"
+  },
+  "keywords": [
+    "ProgressBar",
+    "ReactNative"
+  ],
+  "author": "Juan Martin Huerta Hernandez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kcodev/react-native-calendar.git/issues"
+  },
+  "homepage": "https://github.com/kcodev/react-native-calendar.git#readme",
+  "peerDependencies": {
+    "react": "16.9.0",
+    "react-native": "0.61.5",
+    "moment": "^2.24.0",
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/runtime": "^7.5.5",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "babel-eslint": "^10.0.2",
+    "babel-jest": "^24.8.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "jest": "^24.8.0",
+    "metro-react-native-babel-preset": "^0.55.0",
+    "react": "16.9.0",
+    "react-native": "0.61.5",
+    "react-test-renderer": "16.8.6"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
