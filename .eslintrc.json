@@ -26,6 +26,14 @@
         "react/prop-types": "off",
         "comma-dangle": "off",
         "linebreak-style": 0,
-        "react/sort-comp": 0
+        "react/sort-comp": 0,
+        "react/forbid-prop-types": "off",
+        "max-len": [
+            "error",
+            {
+                "code": 150,
+                "tabWidth": 2
+            }
+        ]
     }
 }

@@ -1,9 +1,10 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import {
+  View, Text, StyleSheet, TouchableOpacity
+} from 'react-native';
 import PropTypes from 'prop-types';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import moment from 'moment/min/moment-with-locales';
-import { months } from 'moment';
 
 export default function CalendarHeader(props) {
   const {
@@ -33,7 +34,7 @@ export default function CalendarHeader(props) {
         </TouchableOpacity>
       </View>
       <View style={[styles.containerDaysHeaderStyle, style.containerDaysHeaderStyle]}>
-        {weekDays.map(day => (
+        {weekDays.map((day) => (
           <View key={day} style={[styles.containerDayHeaderStyle, style.containerDayHeaderStyle]}>
             <Text style={[styles.dayHeaderStyle, style.dayHeaderStyle]}>
               {day}
@@ -95,5 +96,5 @@ const styles = StyleSheet.create({
 
 function capitalize(s) {
   if (typeof s !== 'string') return '';
-  return s.replace(/(^|\s)\S/g, l => l.toUpperCase());
+  return s.replace(/(^|\s)\S/g, (l) => l.toUpperCase());
 }

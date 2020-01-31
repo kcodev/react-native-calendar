@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, Dimensions } from 'react-native';
+import { View, StyleSheet, Dimensions } from 'react-native';
 import PropTypes from 'prop-types';
 
 const { width } = Dimensions.get('window');
@@ -11,7 +11,7 @@ export default function CalendarEvents(props) {
   return (
     <View style={styles.containerEventStyle}>
       {
-        events.map(event => (
+        events.map((event) => (
           <View key={event.id} style={[styles.eventStyle, { backgroundColor: event.color }]} />
         ))
       }

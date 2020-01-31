@@ -1,5 +1,7 @@
 import React, { useMemo } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Dimensions } from 'react-native';
+import {
+  View, Text, StyleSheet, TouchableOpacity, Dimensions
+} from 'react-native';
 import PropTypes from 'prop-types';
 import CalendarEvents from './CalendarEvents';
 
@@ -17,7 +19,9 @@ export default function CalendarDay(props) {
     eventsView,
     staticCalendar
   } = props;
-  const { date, isCurrentMonth, isToday, number } = day;
+  const {
+    date, isCurrentMonth, isToday, number
+  } = day;
 
   const onPressDay = () => {
     if (minDate) {
@@ -36,7 +40,8 @@ export default function CalendarDay(props) {
         [styles.containerDayStyle, style.containerDayStyle],
         !staticCalendar && (isToday && [styles.containerTodayDayStyle, style.containerTodayDayStyle]),
         !staticCalendar && (date.isSame(selected) && [styles.containerSelectedDayStyle, style.containerSelectedDayStyle])
-      ]}>
+      ]}
+      >
         {
           eventsView
             ? (eventsView(events))
@@ -50,7 +55,8 @@ export default function CalendarDay(props) {
           !staticCalendar && (date.isSame(selected) && [styles.selectedDayStyle, style.selectedDayStyle]),
           minDate && ((day.date <= minDate) && [styles.disableDay, style.disableDay]),
           !eventsView && ((events.length > 0) && styles.selectedDayStyle)
-        ]}>
+        ]}
+        >
           {number}
         </Text>
       </View>
