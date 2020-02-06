@@ -90,4 +90,4 @@ To render events, you need to pass a custom object. The required structure of ob
 
 The calendar highlights the day of the event using the color passed in the data object.
 
-![Calendar Events](img\calendar-events.jpg)
+![Calendar Events](img/calendar-events.jpg)
