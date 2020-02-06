@@ -134,16 +134,17 @@ Calendar.defaultProps = {
 };
 
 Calendar.propTypes = {
-  weekDaysLabels: PropTypes.arrayOf(PropTypes.string),
+  dateFormat: PropTypes.string,
   locale: PropTypes.string,
   minDate: PropTypes.any,
   events: PropTypes.object,
   staticCalendar: PropTypes.bool,
+  weekDaysLabels: PropTypes.arrayOf(PropTypes.string),
   onPressDay: PropTypes.func,
+
   eventsView: PropTypes.any,
 
   // Header
-  dateFormat: PropTypes.string,
   headerStyle: PropTypes.shape({
     containerHeaderStyle: PropTypes.object,
     buttonsHeaderStyle: PropTypes.object,
